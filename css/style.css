@@ -139,7 +139,7 @@ input {
   color: #ff0511;
 }
 
-/* @media (max-width: 1200px) {
+@media (max-width: 1200px) {
   body {
     width: 100vw;
   }
@@ -147,4 +147,22 @@ input {
     width: 50vw;
     padding: 2rem;
   }
-} */ ;
+  input {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    width: 100vw;
+  }
+  main {
+    width: 80vw;
+    padding: 2rem;
+  }
+
+  #welcomeScreen h2 {
+    text-transform: capitalize;
+    font-size: 2rem;
+  }
+}
