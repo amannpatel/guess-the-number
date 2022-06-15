@@ -26,12 +26,13 @@
         <!-- Our actual game area -->
         <div id="gameArea">
             <div id="newGameButton">
-                <button>New Game</button>
+                <button onclick="newGameBegin()">New Game</button>
             </div>
 
             <section>
-                <h3>Your Guess</h3>
-                <input type="text" id="inputBox" min="1" max="100" placeholder="Enter your Number">
+                <h3 id="textOutput">Your Guess</h3>
+                <input type="number" id="inputBox" min="1" max="100" placeholder="Enter your Number"
+                    onchange="compareGuess()">
             </section>
 
             <section class="stats">
